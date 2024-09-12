@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav, article, footer{ 
+            text-align: center;
+        }
+        header{ 
+            width: 100%; 
+            height: 100px
+        }
+        .heading{ 
+            color: brown;
+        }
+        .container{
+            margin-bottom: 10px;
+        }
+        .text{ 
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="" alt="img">
+        </header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Location</a>
+            <a href="">Blog</a>
+        </nav>
+        <article>
+            <h1 class = 'heading'>Sign Up</h1>
+            <div class="container">
+                <label class="text" for ="firstName">First Name</label>
+                <input type="text" id ="firstName" minlength="2" maxlength="20">
+            </div>
+            <div class="container">
+                <label class="text" for = "lastName">Last Name</label>
+                <input type="text" id="lastName" minlength="5" maxlength="50">
+            </div>
+            <div class="container">
+                <label class="text" for ="email">Email</label>
+                <input type="email" id="email" minlength="15" maxlength="30">
+            </div>
+            <div class="container">
+                <label class="text" for ="password">Password</label>
+                <input type="password" id = "password" minlength="8" maxlength="30">
+            </div>
+            <div class="container">
+                <label class="text" for ="password-comfirmed">Comfirm Password</label>
+                <input type="password" id='password-comfirmed' minlength="8" maxlength="30">
+            </div>
+            <input type="submit" value ="Sign Up">
+        </article>
+        <footer>
+            <p>Copyright by Mango.org</p>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: brown;
+        }
+        .container{ 
+            border: 1.5px solid;
+            position: relative;
+            height: 50px;
+            display: flex;
+            align-items: center; /* Căn giữa theo chiều dọc */
+            justify-content: center;
+            margin-bottom: 10px ;
+        }
+        .text {
+            position: absolute;
+            top: -10px; 
+            text-align: center;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Book a Table</h1>
+        <div class = "container">
+            <span class = "text">Your Name</span>
+            <input type="text" class = "input" required>
+        </div>
+        <div class = "container">
+            <span class = "text">Sex</span>
+            <input type="radio" class = "input"><label for="">Male</label>
+            <input type="radio" class = "input" checked><label for="">Female</label>
+        </div>
+        <div class = "container">
+            <span class = "text">Size</span>
+            <input type="radio" class = "input"><label for="">2-person table</label>
+            <input type="radio" class = "input" checked><label for="">4-person table</label>
+            <input type="radio" class = "input"><label for="">6-person table</label>
+        </div>
+        <div class = "container">
+            <span class = "text">Location</span>
+            <input type="radio" class = "input"><label for="">Indoors</label>
+            <input type="radio" class = "input" checked><label for="">Outdoors</label>
+        </div>
+        <div style = "text-align: center; margin-top: -9px">
+            <input type="submit" class = "input" checked value ="Book table">
+        </div>
+    </main>
+</body>
+</html>
